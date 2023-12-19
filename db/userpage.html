@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta Name="keywords" content="b">
+    <title>数据查询</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+            width: 400px; /* 设置表单宽度 */
+            padding: 100px; /* 设置表单内边距 */
+            border: 1px solid #ccc; /* 添加边框效果 */
+            border-radius: 10px; /* 添加边框圆角效果 */
+        }
+
+        .layui-input {
+            width: 80%; /* 设置输入框宽度为80% */
+            box-sizing: border-box; /* 防止边框宽度撑大输入框 */
+            padding: 25px; /* 设置输入框内边距 */
+            font-size: 20px; /* 设置输入框字体大小 */
+        }
+
+        .layui-btn {
+            width: 80%; /* 设置按钮宽度为80% */
+            height: 40px; /* 设置按钮高度 */
+            background-color: #5FB878; /* 设置按钮背景色为绿色 */
+            color: #fff; /* 设置按钮文字颜色为白色 */
+            font-size: 16px; /* 设置按钮字体大小 */
+            margin-top: 10px; /* 添加上外边距 */
+        }
+    </style>
+</head>
+<body>
+    <form action="userquery.php" method="POST">
+        <h2>执行数据查询语句</h2>
+        <textarea name="query" required placeholder="输入查询语句" rows="5" class="layui-input"></textarea>
+        <input type="submit" value="查询" class="layui-btn">
+    </form>
+</body>
+</html>
